@@ -1,0 +1,93 @@
+.box-default {
+    background-color: #f4f4f4;
+    opacity: 1;
+}
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.choice-grid div {
+    justify-content: center;
+    align-items: center;
+    width: 32.5%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+}
+
+.choice-grid div img {
+    width: 100%;
+    height: 87.5%;
+}
+
+.not-selected {
+    background-color: #f4f4f4;
+    opacity: 0.6;
+}
+
+#restart {
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+#restart:hover {
+    color: #e0e0e0;
+}
+
+.results {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: rgb(245, 245, 138);
+}
+
+.results h1, .results p {
+    margin-bottom: 18px;
+}
+
+.selected {
+    background-color: #cfe3ff;
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%; /*non standard: avrei dovuto assegnare una classe ad article ma ciò avrebbe comportato la modifica di provided-style*/
+    }
+
+    header div span {
+        display: none;
+    }
+
+    .question-name h1 {
+        font-size: 2em;
+    }
+
+    body h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: 49%;
+    }
+
+    .question-name h1 {
+        font-size: 2em;
+    }
+
+    body h1 {
+        font-size: 2em;
+    }
+}
